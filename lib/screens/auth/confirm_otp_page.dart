@@ -178,8 +178,10 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
                             highlightColor: Colors.white,
                             highlightAnimation: true,
                             highlightAnimationBeginColor: Colors.white,
-                            highlightAnimationEndColor: Theme.of(context).primaryColor,
-                            pinTextAnimatedSwitcherDuration: Duration(milliseconds: 500),
+                            highlightAnimationEndColor:
+                                Theme.of(context).primaryColor,
+                            pinTextAnimatedSwitcherDuration:
+                                Duration(milliseconds: 500),
                             wrapAlignment: WrapAlignment.center,
                             hasTextBorderColor: Colors.transparent,
                             highlightPinBoxColor: Colors.white,

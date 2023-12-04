@@ -167,7 +167,7 @@ class _IntroPageState extends State<IntroPage> {
                       children: <Widget>[
                         Opacity(
                           opacity: pageIndex != 2 ? 1.0 : 0.0,
-                          child: FlatButton(
+                          child: InkWell(
                             splashColor: Colors.transparent,
                             child: Text(
                               'SKIP',
@@ -176,7 +176,7 @@ class _IntroPageState extends State<IntroPage> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16),
                             ),
-                            onPressed: () {
+                            onTap: () {
                               Navigator.of(context).pushReplacement(
                                   MaterialPageRoute(
                                       builder: (context) => MainPage()));
@@ -184,7 +184,7 @@ class _IntroPageState extends State<IntroPage> {
                           ),
                         ),
                         pageIndex != 2
-                            ? FlatButton(
+                            ? InkWell(
                                 splashColor: Colors.transparent,
                                 child: Text(
                                   'NEXT',
@@ -193,14 +193,14 @@ class _IntroPageState extends State<IntroPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16),
                                 ),
-                                onPressed: () {
+                                onTap: () {
                                   if (!(controller.page == 2.0))
                                     controller.nextPage(
                                         duration: Duration(milliseconds: 200),
                                         curve: Curves.linear);
                                 },
                               )
-                            : FlatButton(
+                            : InkWell(
                                 splashColor: Colors.transparent,
                                 child: Text(
                                   'FINISH',
@@ -209,7 +209,7 @@ class _IntroPageState extends State<IntroPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16),
                                 ),
-                                onPressed: () {
+                                onTap: () {
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
                                           builder: (context) => MainPage()));

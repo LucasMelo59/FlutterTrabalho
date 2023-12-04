@@ -241,7 +241,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                                                     ),
                                                     Padding(
                                                       padding: const EdgeInsets
-                                                              .fromLTRB(
+                                                          .fromLTRB(
                                                           4.0, 16.0, 4.0, 0.0),
                                                       child: Text(
                                                           user.name.first +

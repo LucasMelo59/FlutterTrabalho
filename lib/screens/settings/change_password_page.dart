@@ -45,7 +45,6 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
         iconTheme: IconThemeData(
           color: Colors.black,
         ),
-        brightness: Brightness.light,
         backgroundColor: Colors.transparent,
         title: Text(
           'Settings',
@@ -68,7 +67,8 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 48.0,top:16.0),
+                            padding:
+                                const EdgeInsets.only(bottom: 48.0, top: 16.0),
                             child: Text(
                               'Change Password',
                               style: TextStyle(

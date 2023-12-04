@@ -43,7 +43,6 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
             'Payment History',
             style: TextStyle(color: Colors.black),
           ),
-          brightness: Brightness.light,
         ),
         body: SafeArea(
           child: LayoutBuilder(
@@ -124,11 +123,10 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                                                       .map((user) => Column(
                                                             children: <Widget>[
                                                               Row(
-                                                                children: <
-                                                                    Widget>[
+                                                                children: <Widget>[
                                                                   Padding(
                                                                     padding: const EdgeInsets
-                                                                            .only(
+                                                                        .only(
                                                                         right:
                                                                             16.0),
                                                                     child:
@@ -144,11 +142,12 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                                                                     crossAxisAlignment:
                                                                         CrossAxisAlignment
                                                                             .start,
-                                                                    children: <
-                                                                        Widget>[
+                                                                    children: <Widget>[
                                                                       Padding(
-                                                                        padding:
-                                                                            const EdgeInsets.only(top: 16.0),
+                                                                        padding: const EdgeInsets
+                                                                            .only(
+                                                                            top:
+                                                                                16.0),
                                                                         child: Text(
                                                                             user.name.first +
                                                                                 ' ' +
@@ -156,7 +155,8 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                                                                             style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
                                                                       ),
                                                                       Padding(
-                                                                        padding: const EdgeInsets.only(
+                                                                        padding: const EdgeInsets
+                                                                            .only(
                                                                             top:
                                                                                 8.0,
                                                                             bottom:
@@ -176,15 +176,13 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                                                                   ),
                                                                   Spacer(),
                                                                   Column(
-                                                                    children: <
-                                                                        Widget>[
+                                                                    children: <Widget>[
                                                                       Row(
                                                                         mainAxisSize:
                                                                             MainAxisSize.min,
                                                                         crossAxisAlignment:
                                                                             CrossAxisAlignment.start,
-                                                                        children: <
-                                                                            Widget>[
+                                                                        children: <Widget>[
                                                                           Text(
                                                                             '\$ ',
                                                                             style:
@@ -198,8 +196,10 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                                                                         ],
                                                                       ),
                                                                       Padding(
-                                                                        padding:
-                                                                            const EdgeInsets.symmetric(vertical: 8.0),
+                                                                        padding: const EdgeInsets
+                                                                            .symmetric(
+                                                                            vertical:
+                                                                                8.0),
                                                                         child: Text(
                                                                             '2:00 am',
                                                                             style:
@@ -212,7 +212,7 @@ class _PaymentHistoryPageState extends State<PaymentHistoryPage> {
                                                               Padding(
                                                                 padding:
                                                                     const EdgeInsets
-                                                                            .only(
+                                                                        .only(
                                                                         left:
                                                                             64.0),
                                                                 child:

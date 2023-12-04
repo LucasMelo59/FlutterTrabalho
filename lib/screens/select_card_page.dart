@@ -15,7 +15,6 @@ class SelectCardPage extends StatelessWidget {
           iconTheme: IconThemeData(
             color: Colors.black,
           ),
-          brightness: Brightness.light,
           backgroundColor: Colors.transparent,
           title: Text(
             'Select Card',
@@ -142,11 +141,10 @@ class SelectCardPage extends StatelessWidget {
                                       color: Colors.grey[50]),
                                   child: TextField(
                                     textAlign: TextAlign.center,
-                                    keyboardType:
-                                        TextInputType.number,
-                                      inputFormatters:[
-                                        LengthLimitingTextInputFormatter(3),
-                                      ],
+                                    keyboardType: TextInputType.number,
+                                    inputFormatters: [
+                                      LengthLimitingTextInputFormatter(3),
+                                    ],
                                     decoration: InputDecoration(
                                         contentPadding: EdgeInsets.zero,
                                         hintText: 'CVV',
